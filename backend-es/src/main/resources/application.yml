@@ -1,0 +1,15 @@
+server:
+  port: 8084
+#log
+logging:
+  config: classpath:log4j2.xml
+spring:
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
+      properties:
+        path:
+          logs: ./data/elasticsearch/logs
+          data: ./data/elasticsearch/data
+      #cluster-nodes: 10.1.5.77:9300 配置真实es如无此配置则使用自带es(内存)

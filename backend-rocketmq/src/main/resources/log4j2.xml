@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+    <Appenders>
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout patter="%d [%t] %-5p [%c] - %m%n  "/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <logger name="com.shiny" level="info">
+            <AppenderRef ref="console" />
+        </logger>
+        <logger name="RocketmqClient" level="warn">
+            <AppenderRef ref="console" />
+        </logger>
+        <Root level="info">
+            <AppenderRef ref="console"/>
+        </Root>
+    </Loggers>
+</Configuration>

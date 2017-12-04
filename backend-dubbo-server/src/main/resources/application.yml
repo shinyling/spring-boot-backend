@@ -1,0 +1,17 @@
+#log
+logging:
+  config: classpath:log4j2.xml
+spring:
+  dubbo:
+    application:
+      name: provider
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 20881
+    provider:
+      retries: 0
+    scan: com.shiny.backend.dubbo.server
+server:
+  port: 8087

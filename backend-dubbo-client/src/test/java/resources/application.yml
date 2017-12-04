@@ -1,0 +1,12 @@
+#log
+logging:
+  config: classpath:log4j2.xml
+spring:
+  dubbo:
+    application:
+      name: consumer
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    scan: com.shiny.backend
+server:
+  port: 8086

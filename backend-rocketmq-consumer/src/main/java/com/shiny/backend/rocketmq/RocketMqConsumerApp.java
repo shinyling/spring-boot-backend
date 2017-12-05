@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author shiny
  **/
 @SpringBootApplication
-public class RocketMqApplication {
+public class RocketMqConsumerApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(RocketMqApplication.class,args);
+        SpringApplication.run(RocketMqConsumerApp.class,args);
     }
 }

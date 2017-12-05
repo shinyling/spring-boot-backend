@@ -21,7 +21,8 @@
         <module>backend-exception</module>
         <module>backend-transaction</module>
         <module>backend-redis</module>
-        <module>backend-rocketmq</module>
+        <module>backend-rocketmq-provider</module>
+        <module>backend-rocketmq-consumer</module>
     </modules>
     <packaging>pom</packaging>
 

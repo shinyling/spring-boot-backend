@@ -19,7 +19,8 @@ public class MessageListener implements MessageListenerConcurrently {
     @Override
     public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> msgs, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
         for (MessageExt msg:msgs){
-            logger.error("接收到消息!{}",msg);
+            logger.error("接收到消息!{}",new String(msg.getBody()));
+            return ConsumeConcurrentlyStatus.RECONSUME_LATER;
         }
         return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
     }

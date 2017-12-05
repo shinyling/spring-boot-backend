@@ -19,10 +19,3 @@ rocketmq:
     maxMessageSize: 131072 # 1024*128
     #发送消息超时时间
     sendMsgTimeout: 10000
-  consumer:
-    namesrvAddr: 10.1.5.77:9876
-    groupName: vehicleProducerGroup
-    topic: sms
-    tag: verifycode
-    consumeThreadMin: 20
-    consumeThreadMax: 64

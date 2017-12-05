@@ -25,7 +25,7 @@ public class RocketMqTest {
     @Test
     public void testSend() throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
         defaultMQProducer.setVipChannelEnabled(false);
-        Message message=new Message("TEST","TEST","test",("Hello RocketMq!!!").getBytes());
+        Message message=new Message("sms","verifycode","test",("Hello RocketMq!!!").getBytes());
         SendResult sendResult=defaultMQProducer.send(message);
         System.out.println(sendResult);
 

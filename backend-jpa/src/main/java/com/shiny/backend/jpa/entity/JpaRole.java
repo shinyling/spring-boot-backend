@@ -11,6 +11,9 @@ import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author DELL
+ */
 @Data
 @NoArgsConstructor
 @Entity

@@ -23,6 +23,7 @@
         <module>backend-redis</module>
         <module>backend-rocketmq-provider</module>
         <module>backend-rocketmq-consumer</module>
+        <module>backend-disconf</module>
     </modules>
     <packaging>pom</packaging>
 

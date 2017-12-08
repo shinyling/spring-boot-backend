@@ -8,6 +8,11 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface JpaUserDao extends CrudRepository<JpaUser,String> {
 
+    /**
+     * 通过用户名查询用户
+     * @param username 用户名
+     * @return 用户
+     */
     JpaUser findByUsername(String username);
 
 }

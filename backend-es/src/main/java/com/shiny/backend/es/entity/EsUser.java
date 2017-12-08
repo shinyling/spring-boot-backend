@@ -6,6 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.elasticsearch.annotations.Document;
 
+/**
+ * @author DELL
+ */
 @Document(indexName="userindex",type = "user")
 @Data
 @NoArgsConstructor

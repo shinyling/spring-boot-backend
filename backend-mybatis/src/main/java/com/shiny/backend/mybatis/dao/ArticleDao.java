@@ -9,6 +9,11 @@ import org.apache.ibatis.annotations.*;
 @Mapper
 public interface ArticleDao {
 
+    /**
+     * 保存文章
+     * @param article article
+     * @return 受影响行数
+     */
     @Insert("insert into t_article values(#{id},#{name},#{description})")
     int saveArticle(Article article);
     /**

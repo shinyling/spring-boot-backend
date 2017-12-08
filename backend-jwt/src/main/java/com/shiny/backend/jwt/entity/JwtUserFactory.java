@@ -7,6 +7,9 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * @author shiny
+ */
 public final class JwtUserFactory {
 
     private JwtUserFactory(){

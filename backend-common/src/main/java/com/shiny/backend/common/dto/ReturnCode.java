@@ -4,7 +4,9 @@ package com.shiny.backend.common.dto;
  * @author shiny
  **/
 public enum ReturnCode {
-
+    /**
+     * 成功
+     */
     SUCCESS("200","请求成功"),
     FAIL("500","请求失败");
 

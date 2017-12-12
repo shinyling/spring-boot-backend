@@ -25,6 +25,8 @@
         <module>backend-rocketmq-consumer</module>
         <module>backend-disconf</module>
         <module>backend-xxljob</module>
+        <module>backend-aop</module>
+        <module>backend-batch</module>
     </modules>
     <packaging>pom</packaging>
 

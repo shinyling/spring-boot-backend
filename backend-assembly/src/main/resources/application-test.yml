@@ -1,0 +1,5 @@
+server:
+  port: 8081
+redis:
+  host: 10.1.8.4
+  port: 6381
